@@ -1,0 +1,114 @@
+.title{
+    margin-top: 50px;
+    font-size: 2em;
+    text-align: center;
+}
+
+.steps{
+    margin-top: 30px;
+    text-align: center;
+}
+
+.text-box{
+    margin: 20px;
+}
+
+#credentials{
+    width: 35%;
+}
+
+.box-title{
+    margin-left: 35%;
+    margin-right: auto;
+}
+
+.box-text{
+    display: flex;
+    justify-content: space-between;
+    padding: 2.5px;
+    padding-left: 8px;
+    border: 1.5px solid rgb(121, 119, 119);
+    border-radius: 5px;
+    width: 30%;
+    height: 30px;
+    margin-left: auto;
+    margin-right: auto;
+
+    font-size: 1.25rem;
+    font-style: italic;
+    color: rgb(121, 121, 121);
+}
+
+::-webkit-input-placeholder {
+    font-size: 15px;
+}
+
+#experience{
+    align-items: center;
+    margin-left: 35%;
+}
+
+#exp{
+    margin-top: 40px;
+    margin-bottom: 10px;
+}
+
+#input-year{
+    border-radius: 5px;
+    width: 22.5px;
+}
+
+#done{
+    margin-top: 20px;
+    border-radius: 10px;
+    background-color: #71cbff;
+    color: white;
+    border: 1px solid #ccc;
+    font-size: 16px;
+    padding: 10px 40px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+#reset{
+    margin-top: 20px;
+    border-radius: 10px;
+    background-color: #ff7575;
+    color: white;
+    border: 1px solid #ccc;
+    font-size: 16px;
+    padding: 10px 40px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+input[type="file"] {
+    display: none;
+}
+
+#cv{
+    display: flex;
+}
+.fa-file-arrow-up{
+    margin-left: 5px;
+    font-size: 1.25em;
+    opacity: 50%;
+    transition: 0.5s;
+}
+
+.fa-file-arrow-up:hover{
+    cursor: pointer;
+    opacity: 1;
+}
+
+#done:hover{
+    background-color: #09a0f8;
+}
+
+#reset:hover{
+    background-color: #f73737;
+}
+
+
+
+

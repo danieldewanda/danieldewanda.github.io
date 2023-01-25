@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/navbar.css">
+    <link rel="stylesheet" href="./css/transactions-style.css">
+    <link rel="stylesheet" href="./css/footer.css">
+    <script defer src="js/transactions-script.js"></script>
+    <title>Transactions</title>
+</head>
+<body>
+    <!-- Nav -->
+    <nav>
+
+        <!-- Logo -->
+        <div class="logo">
+            <a href="index.html">
+                <img src="assets/logo.png" alt="Logo">
+            </a>
+        </div>
+
+        <!-- Navigation text -->
+
+        <div class="navigation">
+            <ul id="navigation-text">
+                <li><a href="reservation.html">Reservation</a></li>
+				<li><a href="AboutUS.html">About Us</a></li>
+				<li><a href="store.html">Store</a></li>
+				<li><a href="Faq.html">FAQ</a></li>
+				<li class="divider">|</li>          
+				<li><a href ="Application.html" id="application">Become a Mechanic</a></li>
+            </ul>
+        </div>
+
+        <!-- Login & Sign up -->
+
+        <div class="login">
+            <a id="login-btn" href="login-form.html">Log In</a>
+			<div class="box">
+				<a href="signup-form.html">Sign Up</a>
+			</div>
+        </div>
+    </nav>
+
+    <!-- Main -->
+    <main>
+        <h1>Transactions</h1>
+        <div class="transaction-types">
+            <div id="awaitingPayment">
+                <p>Awaiting Payment</p>
+                <div class="notification-circle">
+                    <p>1</p>
+                </div>
+            </div>
+
+            <div id="inProgress">
+                <p>In Progress</p>
+                <div class="notification-circle">
+                    <p>1</p>
+                </div>
+            </div>
+
+            <div id="completed">
+                <p>Completed</p>
+                <div class="notification-circle">
+                    <p>1</p>
+                </div>
+            </div>
+        </div>
+
+        <section>
+            <div class="tt" id="tt-awaitingPayment">
+                <div class="card">
+                    <img src="assets/Tandem Bike.svg" alt="">
+                    <div class="ap-status">
+                        <h2 class="statustext ap">Awaiting Payment</h2>
+                        <p>BCA Virtual Account</p>
+                    </div>
+                    <div class="extra">
+                        <p>Confirm Payment Before</p>
+                        <p>21/03/2022</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="tt" id="tt-inProgress">
+                <div class="card">
+                    <img src="assets/Tandem Bike.svg" alt="">
+                    <div class="ip-status">
+                        <div>
+                            <h2 class="mechanicname">Abdul</h2>
+                            <img class="mechanicsign" src="/assets/MechanicSign.svg" alt="">
+                            <h2 class="statustext ip">On The Way</h2>
+                        </div>
+                        <p>Order ID: TB2394290352</p>
+                    </div>
+                    <div class="extra">
+                        <p>ETA</p>
+                        <h3>14:38</h3>
+                    </div>
+                </div>
+            </div>
+
+            <div class="tt" id="tt-completed">
+                <div class="card">
+                    <img src="assets/Tandem Bike.svg" alt="">
+                    <div class="comp-status">
+                        <h2 class="statustext comp">Completed</h2>
+                        <p>Order ID: TB2394290352</p>
+                    </div>
+                    <div class="extra">
+                        <div>
+                            <p>Abdul</p>
+                            <img class="mechanicsign" src="/assets/MechanicSign.svg" alt="">
+                        </div>
+                        <h3>22/03/2022</h3>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <!-- Footer -->
+
+    <footer>
+
+        <h2>Information</h2>
+        <a href="">
+            Contact us
+        </a>
+
+        <a href="">
+            About us
+        </a>
+
+        <a href="">
+            FAQ
+        </a>
+
+        <div class="copyright">
+            &copy 2022 Kelompok 3
+        </div>
+
+    </footer>
+</body>
+</html>

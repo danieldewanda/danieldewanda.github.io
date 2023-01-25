@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mechanic Job Application</title>
+    <link rel="stylesheet" href="/css/application-style.css">
+    <link rel="stylesheet" href="/css/navbar.css">
+    <script src="https://kit.fontawesome.com/8f3b3c6a46.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="container">
+
+        <!-- Navbar -->
+        <nav>
+    
+          <!-- Logo -->
+    
+          <div class="logo">
+    
+            <a href="index.html">
+              <img src="assets/logo.png" alt="Logo">
+            </a>
+    
+          </div>
+          <!-- Navigation text -->
+    
+          <div class="navigation">
+    
+            <ul id="navigation-text">
+    
+				<li><a href="reservation.html">Reservation</a></li>
+                    <li><a href="AboutUS.html">About Us</a></li>
+                    <li><a href="store.html">Store</a></li>
+                    <li><a href="Faq.html">FAQ</a></li>
+					<li class="divider">|</li>          
+					<li><a href ="Application.html" id="application">Become a Mechanic</a></li>
+    
+            </ul>
+    
+          </div>
+    
+          <!-- Login & Sign up -->
+    
+          <div class="login">
+    
+            <a id="login-btn" href="login-form.html">Log In</a>
+			<div class="box">
+				<a href="signup-form.html">Sign Up</a>
+			</div>
+    
+          </div>
+        </nav>
+
+        <div class="title">
+            <h2>Mechanic Job Application</h2>
+        </div>
+
+        <div class="steps">
+            <img id = "credentials" src="/assets/credentials.svg" alt="">
+        </div>
+
+        <div class="text-box">
+            <p class="box-title">Full Name</p>
+            <input type="text" class = "box-text" name="fname" placeholder="Insert your name ...">
+        </div>
+
+        <div class="text-box">
+            <p class="box-title">Phone Number</p>
+            <input type="text" class = "box-text" name="number" placeholder="+628">
+        </div>
+
+
+        <div class="text-box">
+            <p class="box-title">ID Card</p>
+            <input type="text" class = "box-text" name="idnumber" placeholder="Insert your ID number ...">
+        </div>
+
+        <div id="experience">
+            <h2 id = "exp">Experience</h2>
+            <p>Years of Experience</p>
+            <div id="years">
+                <input type="text" id="input-year" name="years"> years
+            </div>
+            <div id="cv">
+                <p>Upload Curicullum vitae</p>
+                <label  class="upload">
+                  <input type="file" id="img" name="img" accept="image/*">
+                  <i class="fa-solid fa-file-arrow-up"></i>
+                </label>
+            </div>
+            <div id="submitreset">
+              <a href="/Application-Step2.html">
+                <input id="done" type="button" value="Done">
+              </a>
+                <input id="reset" type="button" value ="Reset">
+            </div>
+        </div>
+        
+
+</body>
+</html>

@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="css/login-style.css">
+	<link rel="stylesheet" href="css/navbar.css">
+</head>
+<body>
+    
+    <!-- Container -->
+
+    <div class="container">
+
+        <!-- Navbar -->
+        <nav>
+
+            <!-- Logo -->
+
+            <div class="logo">
+
+                <a href="index.html">
+                    <img src="assets/logo.png" alt="Logo">
+                </a>
+
+            </div>
+
+            <!-- Navigation text -->
+
+            <div class="navigation">
+
+                <ul id="navigation-text">
+
+                    <li><a href="reservation.html">Reservation</a></li>
+                    <li><a href="AboutUS.html">About Us</a></li>
+                    <li><a href="store.html">Store</a></li>
+                    <li><a href="Faq.html">FAQ</a></li>
+					<li class="divider">|</li>          
+					<li><a href ="Application.html" id="application">Become a Mechanic</a></li>
+
+                </ul>
+
+            </div>
+
+            <!-- Login & Sign up -->
+
+            <div class="login">
+
+                <a id="login-btn" href="login-form.html">Log In</a>
+                <div class="box">
+                    <a href="signup-form.html">Sign Up</a>
+                </div>
+                
+            </div>
+
+        </nav>
+
+        <!-- Welcome -->
+
+        <center><h1 id="welcome">Welcome Cyclist!</h1></center>
+
+        <!-- Load Form page -->
+
+        <div class="form">
+
+            <div class="form-box">
+
+                <div class="form-text">
+
+                    <h1>Sign up</h1>
+                    <form method="post">
+                        <div class="txt_field">
+                            <input type="text" required>
+                            <span></span>
+                            <label>Email</label>
+                        </div>
+
+                        <div class="txt_field">
+                            <input type="password" required>
+                            <span></span>
+                            <label>Password</label>
+                        </div>
+
+                        <div class="select">
+                            <select name="format" id="format">
+                                <option selected disabled>Choose Role</option>
+                                <option value="Member">Member</option>
+                                <option value="Mechanic">Mechanic</option>
+                            </select>
+                        </div>
+
+                        <div class="forgot-pass">Forgot Password?</div>
+
+                        <input type="submit" value="Sign Up">
+
+                        <div class="signUp-link">
+                            You're a member? <a href="login-form.html">Log in</a>
+                        </div>
+                    </form>
+
+                </div>
+
+                <div class="img">
+                    <img src="assets/contoh.png" alt="">
+                </div>
+                
+            </div>
+
+        </div>
+
+    </div>
+
+    <!-- Footer -->
+
+    <footer>
+
+        <h2>Information</h2>
+        <a href="">
+            Contact us
+        </a>
+
+        <a href="">
+            About us
+        </a>
+
+        <a href="">
+            FAQ
+        </a>
+
+        <div class="copyright">
+        	&copy 2022 Kelompok 3
+        </div>
+
+    </footer>
+
+    <!-- JS Welcome PrePage -->
+
+    <script>
+        
+        const loader = document.querySelector('#welcome');
+        const form = document.querySelector('.form');
+
+        function init() {
+            setTimeout(() => {
+                loader.style.opacity = 0;
+                loader.style.display = "none";
+
+                form.style.display = "block";
+                setTimeout(() => (form.style.opacity = 1) ,50)
+            }, 3000);
+        }
+
+        init();
+
+    </script>
+
+
+</body>
+</html>

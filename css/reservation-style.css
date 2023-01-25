@@ -1,0 +1,286 @@
+*{
+	box-sizing: border-box;
+}
+:root {
+    --bmx: #964747;
+    --mountainbike: #966847;
+    --sportsbike: #968e47;
+    --foldingbike: #699647;
+    --utilitybike: #479196;
+    --tandembike: #484796;
+}
+/* Errors Styling */
+.fa-solid {
+    display: inline;
+}
+.error {
+    display: none;
+    color: rgb(210, 89, 78);
+    background-color: rgb(255, 239, 239);
+    padding: 1rem;
+    width: fit-content;
+    border-radius: 10px;
+}
+.error p {
+    display: inline;
+    font-size: 1rem;
+    font-weight: 500;
+    margin-left: 0.5rem;
+}
+
+/* Main Reservation */
+
+main {
+    width: 80%;
+    max-width: 800px;
+    margin: 5rem auto;
+}
+main h1 {
+    font-size: 3rem;
+}
+main h2 {
+    font-size: 2rem;
+    margin-left: 2rem;
+}
+
+p,
+section label,
+textarea {
+    font-size: 1rem;
+}
+
+header {
+    display: flex;
+    align-items: center;
+}
+.circle {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 4rem;
+    width: 4rem;
+    border-radius: 50%;
+/*     color: white;
+    background-color: #37b6ff; */
+    border: 1px solid black;
+}
+.circle h2 {
+    margin: auto;
+}
+
+section {
+    width: 100%;
+    margin: 2rem auto;
+}
+
+.content {
+    margin-left: 6rem;
+}
+
+/* Section Consult */
+.wa-box {
+    margin-top: 1.5rem;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem 2rem;
+    width: fit-content;
+    background-color: #00e676;
+    border-radius: 0.75rem;
+    color: white;
+}
+.wa-box p {
+    margin-left: 1.25rem;
+}
+.wa-box img {
+    width: 3rem;
+}
+
+/* Section BikeType */
+.alternatepic {
+    display: none;
+}
+.type-wrapper {
+    display: inline-flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    width: 100%;
+}
+.type > * {
+    pointer-events: none;
+}
+.type {
+    cursor: pointer;
+    display: flex;
+    margin: 0.5rem 0.5rem 0.5rem 0;
+    align-items: center;
+    padding: 0.5rem;
+    border-radius: 10px;
+}
+
+.type img {
+    height: 3rem;
+}
+.type p {
+    margin-left: 1rem;
+    font-weight: 700;
+}
+#bmx {
+    color: var(--bmx);
+    border: 2px solid var(--bmx);
+}
+
+#mountainbike {
+    color: var(--mountainbike);
+    border: 2px solid var(--mountainbike);
+}
+
+#sportsbike {
+    color: var(--sportsbike);
+    border: 2px solid var(--sportsbike);
+}
+
+#foldingbike {
+    color: var(--foldingbike);
+    border: 2px solid var(--foldingbike);
+}
+
+#utilitybike {
+    color: var(--utilitybike);
+    border: 2px solid var(--utilitybike);
+}
+
+#tandembike {
+    color: var(--tandembike);
+    border: 2px solid var(--tandembike);
+}
+
+/* Section Problems */
+input[type="checkbox"] {
+    width: 1.5rem;
+    height: 1.5rem;
+}
+.problemlists {
+    display: flex;
+    align-items: center;
+    margin: 1rem auto;
+}
+.problemlists label {
+    margin-left: 1.25rem;
+}
+textarea {
+    width: 100%;
+}
+
+/* Section Address */
+.address-block {
+    margin: 1rem auto;
+}
+.address-block input {
+    width: 100%;
+    height: 3rem;
+    font-size: 1rem;
+    padding: 0.5rem 1rem;
+}
+
+.subdistrictsurbanvillage {
+    display: flex;
+}
+.subdistrictsurbanvillage > div {
+    width: 50%;
+    min-width: 10rem;
+}
+.urbanvillage {
+    margin-left: 1rem;
+}
+#zipcode-error {
+    width: fit-content;
+}
+#zipcode-input {
+    width: 20%;
+    min-width: 10rem;
+}
+
+/* Section Schedule */
+.datetime-box {
+    margin: 1rem 0;
+    display: flex;
+    width: 60%;
+}
+.date,
+.time {
+    width: 100%;
+}
+#date,
+#time {
+    font-size: 1rem;
+    width: 100%;
+    height: 2rem;
+    padding: 0.5rem 1rem;
+}
+.time {
+    margin-left: 1rem;
+}
+
+/* Reserve Button */
+#reserve-button {
+    width: 15rem;
+    cursor: pointer;
+    display: block;
+    margin: 3rem auto;
+    padding: 1rem 2rem;
+    font-size: 1.25rem;
+    color: white;
+    background-color: #37b6ff;
+    border: 0;
+    border-radius: 30px;
+    text-align: center;
+    transition: 0.1s ease;
+}
+#reserve-button:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0 20px 3px rgb(218, 218, 218);
+}
+#reserve-button:active {
+    background-color: white;
+    color: #37b6ff;
+    outline: 1px solid #37b6ff;
+}
+
+@media only screen and (max-width: 540px) {
+    main h1 {
+        font-size: 2.5rem;
+    }
+    main h2 {
+        font-size: 1.5rem;
+        margin-left: 2rem;
+    }
+    .content {
+        padding-top: 1rem;
+        margin-left: 0;
+    }
+    .circle {
+        width: 3rem;
+        height: 3rem;
+    }
+    .subdistrictsurbanvillage {
+        display: block;
+    }
+    .subdistrictsurbanvillage div {
+        width: 100%;
+        min-width: 10rem;
+    }
+    .urbanvillage {
+        margin-left: 0;
+        margin-top: 1rem;
+    }
+    .datetime-box {
+        display: block;
+        width: 80%;
+    }
+    .time {
+        margin-left: 0;
+        margin-top: 1rem;
+    }
+}

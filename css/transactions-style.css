@@ -1,0 +1,108 @@
+main h1{
+    font-size: 3rem;
+    text-align: center;
+    margin: 3rem 0 2rem;
+}
+
+.transaction-types{
+    display: flex;
+    justify-content: center;
+}
+.transaction-types > div{
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 3rem;
+    border-bottom: 3px solid rgb(209, 209, 209);
+}
+.transaction-types > div > *{
+    pointer-events: none;
+}
+#awaitingPayment{
+    border-bottom:3px solid rgb(55, 182, 255);
+}
+
+.transaction-types > div:hover > p{
+    color: #37B6FF;
+}
+.transaction-types > div + div{
+    margin-left: 2.5rem;
+}
+.notification-circle{
+    margin-left: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 1.75rem;
+    height: 1.75rem;
+    border-radius: 50%;
+    color: white;
+    background-color: #37B6FF;
+}
+
+section{
+    width: 40%;
+    margin: 0 auto;
+}
+.card > img{
+    width: 5rem;
+    margin-right: 2rem;
+}
+
+.card{
+    margin: 3rem 0;
+    display: flex;
+    align-items: center;
+    padding: 1rem 2rem;
+    border-radius: 10px;
+    box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.25);
+}
+.extra{
+    text-align: end;
+    margin-left: auto;
+}
+/* Initial State */
+#tt-inProgress,
+#tt-completed{
+    display: none;
+}
+
+/* Status Color */
+.ap{
+    color: #D03F3F;
+}
+.ip{
+    color: #37B6FF;
+}
+.comp{
+    color: #2ED06F;
+}
+
+/* Special for In Progress */
+.ip-status > div{
+    display: flex;
+    align-items: center;
+}
+
+.mechanicname{
+    font-weight: 400;
+}
+
+#tt-inProgress .mechanicsign{
+    margin: 0 0.75rem;
+    height: 2rem;
+}
+
+/* Special for Completed */
+.extra > div{
+    display: flex;
+    justify-content: flex-end;
+}
+
+
+#tt-completed .mechanicsign{
+    margin-left: 0.75rem;
+    height: 1.5rem;
+}
+

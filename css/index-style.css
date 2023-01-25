@@ -1,0 +1,115 @@
+/* Landing Page */
+
+/* Make a my Own Transition */
+
+@keyframes FadeInAndScale {
+    0% {
+        opacity: 0;
+    }
+
+    70% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+/* Make a my Own Transition */
+
+.landing-page {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-top: 100px;
+}
+
+.tagline {
+    animation: FadeInAndScale 3s;
+    animation-delay: -0.5s;
+}
+.tagline h1{
+	font-size: 3.5rem;
+}
+
+.tagline p {
+    margin-top: 40px;
+    font-size: 2rem;
+}
+
+.tagline-image {
+    animation: FadeInAndScale 2s;
+    animation-delay: -0.5s;
+}
+
+/* Arrow */
+
+.arrow {
+	width: fit-content;
+	margin: 9rem auto 5rem;
+	border-radius: 50%;
+	background-color: #37b6ff;
+	width: 5rem;
+	height: 5rem;
+    animation: FadeInAndScale 4s;
+    animation-delay: -0.5s;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	
+}
+.arrow img{
+	display: flex;
+}
+
+/* Steps to Order */
+.steps .title {
+    width: 100%;
+}
+
+.steps .title h1 {
+    margin-left: 11%;
+}
+
+/* Steps boxex */
+
+.steps-box img {
+    width: 300px;
+    margin-left: 12%;
+    margin-top: 5%;
+}
+
+/* Reserve Button */
+#reserve-button {
+    width: 15rem;
+    cursor: pointer;
+    display: block;
+    margin: 1rem auto;
+    padding: 1rem 2rem;
+    font-size: 1.25rem;
+    color: white;
+    background-color: #37b6ff;
+    border: 0;
+    border-radius: 30px;
+    text-align: center;
+    transition: 0.1s ease;
+}
+#reserve-button:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0 20px 3px rgb(218, 218, 218);
+}
+#reserve-button:active {
+    background-color: white;
+    color: #37b6ff;
+    outline: 1px solid #37b6ff;
+}
+
+/* Call to Action */
+.callToAction{
+	margin: 5rem auto;
+	text-align: center;
+}
+
+
+

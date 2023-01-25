@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+   
+    <link rel="stylesheet" href="./css/navbar.css">
+    <link rel="stylesheet" href="./css/reservation-style.css">
+    <link rel="stylesheet" href="./css/footer.css">
+    <title>Reservation</title>
+
+    <script src="https://kit.fontawesome.com/56f65869ae.js" crossorigin="anonymous"></script>
+    <script type="module" defer src="./js/reservation-style-helper.js"></script>
+    <script type="module" defer src="./js/reservation-script.js"></script>
+</head>
+<body>
+    
+    <!-- Nav -->
+    <nav>
+
+        <!-- Logo -->
+        <div class="logo">
+            <a href="index.html">
+                <img src="assets/logo.png" alt="Logo">
+            </a>
+        </div>
+
+        <!-- Navigation text -->
+
+        <div class="navigation">
+            <ul id="navigation-text">
+
+				<li><a href="reservation.html">Reservation</a></li>
+				<li><a href="AboutUS.html">About Us</a></li>
+				<li><a href="store.html">Store</a></li>
+				<li><a href="Faq.html">FAQ</a></li>
+				<li class="divider">|</li>          
+				<li><a href ="Application.html" id="application">Become a Mechanic</a></li>
+            </ul>
+        </div>
+
+        <!-- Login & Sign up -->
+
+        <div class="login">
+            <a id="login-btn" href="login-form.html">Log In</a>
+			<div class="box">
+				<a href="signup-form.html">Sign Up</a>
+			</div>
+        </div>
+    </nav>
+
+    <!-- Main -->
+
+    <main>
+        
+        <h1>Reserve a mechanic</h1>
+        <p>
+            A mechanic will come to your house to repair your bicycle. Our mechanic will bring their own equipment and will fix your bicycle within minimum of 1 hour.
+        </p>
+
+        <!-- Should make a form from this point if turned into PHP -->
+        <form id="reservation-form">
+            
+        <!-- Section Consult -->
+            <section class="consult">
+                <header> 
+                    <div class="circle">
+                        <h2>1</h2>
+                    </div>
+                    <h2>Consult</h2>
+                </header>
+                <div class="content">
+                    <p>Don't know what's the problem with your bike? Ask us first! We will give you our best recommendation and will prepare better for your service</p>
+                    <div class="wa-box">
+                        <img src="/assets/logos_whatsapp.svg" alt="">
+                        <p><strong>Whatsapp</strong> +62812345678</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Section BikeType-->
+            <section class="biketype" id="biketype">
+                <header> 
+                    <div class="circle">
+                        <h2>2</h2>
+                    </div>
+                    <h2>Bicycle Type</h2>
+                </header>
+                <div class="content">
+                    <p>Please choose your bicycle type.</p>
+                    <!-- Error Message -->
+                    <div class="error" id="biketype-error">
+                        <i class="fa-solid fa-triangle-exclamation"></i>
+                        <p>Choose your bike type!</p>
+                    </div>
+                    <!------------------->
+                    <div class="type-wrapper">
+                        <div class="type" id="bmx">
+                            <img src="./assets/Bmx.svg" alt="" class="originalpic">
+                            <img src="./assets/Bmx White.svg" alt="" class="alternatepic">
+                            <p>BMX</p>
+                        </div>
+    
+                        <div class="type" id="mountainbike">
+                            <img src="./assets/Mountain Bike.svg" alt="" class="originalpic">
+                            <img src="./assets/Mountain Bike White.svg" alt="" class="alternatepic">
+                            <p>Mountain Bike</p>
+                        </div>
+    
+                        <div class="type" id="sportsbike">
+                            <img src="./assets/Sports Bike.svg" alt="" class="originalpic">
+                            <img src="./assets/Sports Bike White.svg" alt="" class="alternatepic">
+                            <p>Sports Bike</p>
+                        </div>
+    
+                        <div class="type" id="foldingbike">
+                            <img src="./assets/Folding Bike.svg" alt="" class="originalpic">
+                            <img src="./assets/Folding Bike White.svg" alt="" class="alternatepic">
+                            <p>Folding Bike</p>
+                        </div>
+    
+                        <div class="type" id="utilitybike">
+                            <img src="./assets/Utility Bike.svg" alt="" class="originalpic">
+                            <img src="./assets/Utility Bike White.svg" alt="" class="alternatepic">
+                            <p>Utility Bike</p>
+                        </div>
+                        <div class="type" id="tandembike">
+                            <img src="./assets/Tandem Bike.svg" alt="" class="originalpic">
+                            <img src="./assets/Tandem Bike White.svg" alt="" class="alternatepic">
+                            <p>Tandem Bike</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            
+            <!-- Section Problems -->
+            <section class="problems" id="problems">
+                <header> 
+                    <div class="circle">
+                        <h2>3</h2>
+                    </div>
+                    <h2>Bicycle Problems</h2>
+                </header>
+                <div class="content">
+                    <p>Please checklist the problem(s) you have with your bike. You can also add extra notes to our mechanic</p>
+                    <!-- Error Message -->
+                    <div class="error" id="problems-error">
+                        <i class="fa-solid fa-triangle-exclamation"></i>
+                        <p>Choose at least 1 problem!</p>
+                    </div>
+                    <!------------------->
+
+                    <div class="problemlists">
+                        <input type="checkbox" class="checkbox" id="problem-tire" value="tire">
+                        <label for="problem-tire">Tire Problem (Blowouts, Warped, Broken)</label>
+                    </div>
+
+                    <div class="problemlists">
+                        <input type="checkbox" class="checkbox" id="problem-rim" value="rim">
+                        <label for="problem-rim">Rim Problem (Cracked, Warped, Broken)</label>
+                    </div>
+
+                    <div class="problemlists">
+                        <input type="checkbox" class="checkbox" id="problem-frame" value="frame">
+                        <label for="problem-frame">Frame Problem (Loose, Unstable, Cracked)</label>
+                    </div>
+
+                    <div class="problemlists">
+                        <input type="checkbox" class="checkbox" id="problem-chain" value="chain">
+                        <label for="problem-chain">Chain Problem (Detached, Creaking, Loose)</label>
+                    </div>
+
+                    <div class="problemlists">
+                        <input type="checkbox" class="checkbox" id="problem-suspension" value="suspension">
+                        <label for="problem-suspension">Suspension Problem (Stuck, Heated, Broken)</label>
+                    </div>
+
+                    <div class="problemlists">
+                        <input type="checkbox" class="checkbox" id="problem-brake" value="brake">
+                        <label for="problem-brake">Brake Problem (Squishy, Ineffective, Squeaky)</label>
+                    </div>
+
+                    <div class="problemlists">
+                        <input type="checkbox" class="checkbox" id="problem-installation" value="installation">
+                        <label for="problem-installation">Needs an Installation</label>
+                    </div>
+                    
+                    <label for="extranotes">Extra Notes</label>
+                    <br>
+                    <textarea name="extranotes" id="extranotes" cols="50" rows="5"></textarea>
+                </div>
+            </section>
+            
+            <!-- Section Address -->
+            <section class="address">
+                <header> 
+                    <div class="circle">
+                        <h2>4</h2>
+                    </div>
+                    <h2>Address</h2>
+                </header>
+                <div class="content">
+                    <p>
+                        List the detail of your location. Please write a clear address detail so that our mechanic can get there as soon as possible!
+                    </p>
+                    <div class="address-block" id="addressline1">
+                        <h3>Address Line 1</h3>
+                        <!-- Error Message -->
+                        <div class="error" id="addressline1-error">
+                            <i class="fa-solid fa-triangle-exclamation"></i>
+                            <p>Address line can't be empty!</p>
+                        </div>
+                        <!------------------->
+                        <input type="text" name="addressline1-input" id="addressline1-input" placeholder="Jalan Imam Bonjol No. 3 RT 01 RW 03" required> 
+                    </div>
+
+                    <div class="address-block">
+                        <h3>Address Line 2 (Optional)</h3>
+                        <input type="text" name="addressline2-input" id="addressline2-input" placeholder="">
+                    </div>
+
+                    <div class="address-block" id="province">
+                        <h3>Province</h3>
+                        <div class="error" id="province-error">
+                            <i class="fa-solid fa-triangle-exclamation"></i>
+                            <p>Province block can't be empty!</p>
+                        </div>
+                        <input type="text" name="province-input" id="province-input" placeholder="" required>
+                    </div>
+
+                    <div class="address-block" id="citydistrict">
+                        <h3>City/District</h3>
+                        <div class="error" id="citydistrict-error">
+                            <i class="fa-solid fa-triangle-exclamation"></i>
+                            <p>City/District block can't be empty!</p>
+                        </div>
+                        <input type="text" name="citydistrict-input" id="citydistrict-input" placeholder="" required>
+                    </div>
+
+                    <div class="address-block subdistrictsurbanvillage">
+                        <div id="subdistrict">
+                            <h3>Sub-district</h3>
+                            <div class="error" id="subdistrict-error">
+                                <i class="fa-solid fa-triangle-exclamation"></i>
+                                <p>Sub-district can't! be empty!</p>
+                            </div>
+                            <input type="text" name="subdistrict-input" id="subdistrict-input" placeholder="" required>
+                        </div>
+                        <div class="urbanvillage" id="urbanvillage">
+                            <h3>Urban Village</h3>
+                            <div class="error" id="urbanvillage-error">
+                                <i class="fa-solid fa-triangle-exclamation"></i>
+                                <p>Urban village can't be empty!</p>
+                            </div>
+                            <input type="text" name="urbanvillage-input" id="urbanvillage-input" placeholder="" required>
+                        </div>
+                    </div>    
+                    <div class="address-block">
+                        <h3>Zip Code</h3>
+                        <div class="error" id="zipcode-error">
+                            <i class="fa-solid fa-triangle-exclamation"></i>
+                            <p>Zip code can't be empty!</p>
+                        </div>
+                        <input type="text" name="zipcode-input" id="zipcode-input" placeholder="" required>
+                    </div>
+                </div> 
+            </section>
+
+            <!-- Schedule Section -->
+            <section class="Schedule">
+                <header> 
+                    <div class="circle">
+                        <h2>5</h2>
+                    </div>
+                    <h2>Schedule</h2>
+                </header>
+                <div class="content">
+                    <p>
+                        Pick a suitable schedule for the reparation. Our mechanic will arrive on time.
+                    </p>
+                    <!-- Error Message -->
+                    <div class="error" id="datetime-error">
+                        <i class="fa-solid fa-triangle-exclamation"></i>
+                        <p>You must set both date and time!</p>
+                    </div>
+                    <!------------------->
+                    <div class="datetime-box">
+                        <div class="date">
+                            <label for="date"><strong>Date</strong></label>
+                            <br>
+                            <input type="date" id="date" name="date" required>
+                        </div>
+                        <div class="time">
+                            <label for="time"><strong>Time</strong></label>
+                            <br>
+                            <input type="time" id="time" name="time" required>
+                        </div>
+                    </div>
+                    
+                    
+                </div>
+            </section>
+            <input id="reserve-button" type="button" value="Reserve">
+
+        <!-- Form ends here -->
+        </form>
+    </main>
+
+
+    <!-- Footer -->
+
+    <footer>
+
+        <h2>Information</h2>
+        <a href="">
+            Contact us
+        </a>
+
+        <a href="">
+            About us
+        </a>
+
+        <a href="">
+            FAQ
+        </a>
+
+        <div class="copyright">
+            &copy 2022 Kelompok 3
+        </div>
+
+    </footer>
+</body>
+</html>
